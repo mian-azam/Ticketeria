@@ -1,0 +1,177 @@
+@import url(./reset.css);
+
+
+:root {
+    --app-dark-bg: #1c1c1c;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-dark-grey: #3a434d;
+    --app-light-grey: #6c7e90;
+}
+
+body {
+    background-color: var(--app-dark-bg);
+    transition: all 0.25s ease-in-out;
+  
+}
+
+.container {
+    width: min(100% - 50px, 1080px);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ----------------------------------------------- */
+/*               HEADER                       */
+/* ----------------------------------------------- */
+header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    background-color: var(--app-dark-grey);
+   
+}
+
+
+.heading {
+    width: 50%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.heading img {
+    width: 40px;
+    height: 40px;
+}
+
+.heading h1 {
+    color: #f0f2f4;
+    font-size: 30px;
+    margin-left: 3px;
+}
+
+nav {
+    margin: 20px 0;
+    display: flex;
+    align-content:flex-end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: end;
+}
+
+nav ul li {
+   margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: color 0.25s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #fafafa;
+    box-shadow: 0px 1px 0px #fafafa;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+nav li+li {
+    margin-left: 10px;
+}
+
+
+/* ================================================================================ */
+
+.check{
+    margin-top: 40px;
+    height: 36px;
+    width: 100%;
+    display: flex;
+}
+
+.movieArea{
+width: calc(60% - 15px);
+margin-right: 15px;
+}
+
+.movieSearch{
+    width: 100%;
+    position: relative;
+}
+.search {
+    color: #fff;
+    font-size: 16px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 2px;
+    background-color: #282b31;
+    padding-left: 20px;
+  }
+
+.cityArea{
+    width: calc(30% - 15px);
+    margin-right: 15px;
+}
+
+.citySearch{
+    width: 100%;
+}
+
+.para {
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+
+.button {
+    height: 36px;
+    width: calc(10% - 15px);
+    margin-left: 10px;
+    border: 20px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 800;
+    background-color:#EEE8AA;
+    transition: all 0.2s ease-in-out;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+    background-color:#EEE8AA;
+    color: #1c1c1c;
+    font-size: large;
+    font-weight: 800;
+}
+
+
+
+/* ================================================================================ */
+
+
+
+/* -------------------------------------MAIN CONTENT----------------------------------- */
+
+textarea{
+    color: var(--app-dark-grey);
+    background-color: #3a434d;
+    height: 20px;
+    width: 120px;
+
+}
