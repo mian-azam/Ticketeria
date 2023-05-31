@@ -109,6 +109,10 @@ margin-right: 15px;
     width: 100%;
     position: relative;
 }
+
+.movieList{
+    color: #fff;
+}
 .search {
     color: #fff;
     font-size: 16px;
@@ -128,6 +132,9 @@ margin-right: 15px;
     width: 100%;
 }
 
+.cityList{
+    color: #fff;
+}
 
 .button {
     height: 36px;
