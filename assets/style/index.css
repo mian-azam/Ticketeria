@@ -113,6 +113,7 @@ margin-right: 15px;
 .movieList{
     color: #fff;
     cursor: pointer;
+    margin-left: 30px;
 }
 .search {
     color: #fff;
@@ -136,6 +137,7 @@ margin-right: 15px;
 .cityList{
     color: #fff;
     cursor: pointer;
+    margin-left: 30px;
 }
 
 .button {
