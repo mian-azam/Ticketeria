@@ -128,14 +128,6 @@ margin-right: 15px;
     width: 100%;
 }
 
-.para {
-    padding: 20px;
-    display: grid;
-    place-items: center;
-    font-size: 28px;
-    text-decoration: underline;
-}
-
 
 .button {
     height: 36px;
@@ -163,8 +155,36 @@ button{
 
 
 /* ================================================================================ */
-
-
+.box{
+    margin-top: 120px;
+}
+.display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 120px 30px;
+  }
+  
+  .grid-item {
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .grid-item img {
+    border-radius: 2px;
+  }
+  
+  .grid-item p {
+    color: #fff;
+    margin-top: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover {
+    animation: pop 0.5s linear 1;
+  }
 
 /* -------------------------------------MAIN CONTENT----------------------------------- */
 
