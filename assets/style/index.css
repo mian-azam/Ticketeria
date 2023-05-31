@@ -112,6 +112,7 @@ margin-right: 15px;
 
 .movieList{
     color: #fff;
+    cursor: pointer;
 }
 .search {
     color: #fff;
@@ -134,6 +135,7 @@ margin-right: 15px;
 
 .cityList{
     color: #fff;
+    cursor: pointer;
 }
 
 .button {
@@ -160,8 +162,6 @@ button{
 }
 
 
-
-/* ================================================================================ */
 .box{
     margin-top: 120px;
 }
@@ -189,16 +189,4 @@ button{
     transition: all 0.3s ease-in-out;
   }
   
-  .grid-item:hover {
-    animation: pop 0.5s linear 1;
-  }
 
-/* -------------------------------------MAIN CONTENT----------------------------------- */
-
-textarea{
-    color: var(--app-dark-grey);
-    background-color: #3a434d;
-    height: 20px;
-    width: 120px;
-
-}

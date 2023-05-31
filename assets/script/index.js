@@ -56,13 +56,13 @@ async function getMovies() {
   
   getMovies();
 
-  //Search movies
+
 const searchMovies = async searchText => {
     const response = await fetch(urlForMovies, options); 
     const data = await response.json(); 
     const titles = data.results;
   
-   //Get matches to current text input
+
    let moviesMatches = titles.filter(movie => {
     const regex = new RegExp(`^${searchText}`, 'gi');
     return movie.title.match(regex);
@@ -75,8 +75,7 @@ const searchMovies = async searchText => {
    }
    outputHtml(moviesMatches);
   };
-  
-   //Show movies results in HTML
+
    const outputHtml = matches => {
     if(matches.length > 0) {
       listOfMovies.style.visibility = 'visible';
@@ -86,7 +85,6 @@ const searchMovies = async searchText => {
   
       listOfMovies.innerHTML = html;
   
-      // Update the value of the input text with the title clicked
       listOfMovies.querySelectorAll('h4').forEach(item => {
         item.addEventListener('click', () => {
           movie.value = item.textContent;
@@ -123,13 +121,13 @@ const searchMovies = async searchText => {
   
   getCities();
 
-// Search city
+
     const searchCity = async searchCity => {
     const response = await fetch(urlForCities, options); 
     const results = await response.json(); 
     const cities = results.cities;
   
-   //Get matches to current text input
+
    let citiesMatches = cities.filter(city => {
     const regex = new RegExp(`^${searchCity}`, 'gi');
     return city.name.match(regex);
@@ -143,7 +141,6 @@ const searchMovies = async searchText => {
    citiesHtml(citiesMatches);
   };
   
-   //Show city results in HTML
    const citiesHtml = cityMatches => {
     if(cityMatches.length > 0) {
       listOfCities.style.visibility = 'visible';
@@ -153,7 +150,7 @@ const searchMovies = async searchText => {
   
       listOfCities.innerHTML = html2;
   
-      // Update the value of the input text with the city clicked
+
       listOfCities.querySelectorAll('h4').forEach(item => {
         item.addEventListener('click', () => {
           city.value = item.textContent;
